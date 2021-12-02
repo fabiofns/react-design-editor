@@ -21,10 +21,13 @@ const Gif = fabric.util.createClass(fabric.Object, {
 	_render(ctx: CanvasRenderingContext2D) {
 		this.callSuper('_render', ctx);
 		if (!this.isStarted) {
+
+			console.log('teste gif');
+
 			this.isStarted = true;
 			window
 				// @ts-ignore
-				.gifler('./images/sample/earth.gif')
+				.gifler(this.src)
 				.frames(this.gifCanvas, (_c: CanvasRenderingContext2D, frame: any) => {
 					this.isStarted = true;
 					this.drawFrame(ctx, frame);

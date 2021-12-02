@@ -40,7 +40,7 @@
 			}
 		}
 	],
-	"IMAGE": [
+	"Imagem e Vídeo": [
 		{
 			"name": "Image",
 			"description": "",
@@ -56,6 +56,22 @@
 			}
 		},
 		{
+			"name": "GIF XHB",
+			"description": "",
+			"type": "gif",
+			"icon": {
+				"prefix": "fas",
+				"name": "image"
+			},
+			"option": {
+				"type": "gif",
+				"width": 400,
+				"height": 400,
+				"name": "New gif",
+				"src": "./images/sapo.gif"
+			}
+		},
+		{
 			"name": "GIF",
 			"description": "",
 			"type": "gif",
@@ -68,7 +84,26 @@
 				"width": 400,
 				"height": 400,
 				"name": "New gif",
-				"src": ""
+				"src": "./images/sample/earth.gif"
+			}
+		},
+		{
+			"name": "Video",
+			"description": "",
+			"type": "element",
+			"icon": {
+				"prefix": "fab",
+				"name": "youtube"
+			},
+			"option": {
+				"superType": "element",
+				"type": "video",
+				"width": 480,
+				"height": 270,
+				"name": "New video",
+				"autoplay": true,
+				"muted": true,
+				"loop": true
 			}
 		}
 	],
@@ -159,28 +194,6 @@
 			"option": {
 				"type": "arrow",
 				"name": "New arrow"
-			}
-		}
-	],
-	
-	"ELEMENT": [			
-		{
-			"name": "Video",
-			"description": "",
-			"type": "element",
-			"icon": {
-				"prefix": "fab",
-				"name": "youtube"
-			},
-			"option": {
-				"superType": "element",
-				"type": "video",
-				"width": 480,
-				"height": 270,
-				"name": "New video",
-				"autoplay": true,
-				"muted": true,
-				"loop": true
 			}
 		}
 	]
