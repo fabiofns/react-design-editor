@@ -12,10 +12,10 @@ const Gif = fabric.util.createClass(fabric.Object, {
 		this.gifCanvas = document.createElement('canvas');
 	},
 	drawFrame(ctx: CanvasRenderingContext2D, frame: any) {
-		// update canvas size
+		
 		this.gifCanvas.width = frame.width;
 		this.gifCanvas.height = frame.height;
-		// update canvas that we are using for fabric.js
+
 		ctx.drawImage(frame.buffer, -frame.width / 2, -frame.height / 2, frame.width, frame.height);
 	},
 	_render(ctx: CanvasRenderingContext2D) {
